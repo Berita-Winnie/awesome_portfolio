@@ -9,9 +9,9 @@ import Dribble from './Dribble.png'
 import dribble_socials from './dribble_socials.png'
 import free_bird from './free_bird.png'
 import facebook from './facebook.png'
-import gema_nolen from './gema_nolen.png'
-import gema_nolen1 from './gema_nolen1.png'
-import gema_nolen2 from './gema_nolen2.png'
+import gemma_nolen1 from './gemma_nolen1.png'
+import gemma_nolen2 from './gemma_nolen2.png'
+import gemma_nolen3 from './gemma_nolen3.png'
 import google1 from './google1.png'
 import google from './google.png'
 import Hero_image from './Hero_image.png'
@@ -24,8 +24,9 @@ import purple_haze from './purple_haze.png'
 import Star from './Star.png'
 import under_pressure from './under_pressure.png'
 import visual_design from './visual_design.png'
-import whole_loffa from './whole_loffa.png'
-import You_really_got_me from 'You_really_got_me.png'
+import whole_loffa_love from './whole_loffa_love.png'
+import You_really_got_me from './You_really_got_me.png'
+import cancel_icon from './cancel_icon.png'
 
 export const assets = {
   American_girl,
@@ -39,11 +40,12 @@ export const assets = {
   dribble_socials,
   free_bird,
   facebook,
-  gema_nolen,
-  gema_nolen1,
-  gema_nolen2,
+  gemma_nolen1,
+  gemma_nolen2,
+  gemma_nolen3,
   google1,
   google,
+  cancel_icon,
   Hero_image,
   Logo,
   Menu,
@@ -54,7 +56,7 @@ export const assets = {
   Star,
   under_pressure,
   visual_design,
-  whole_loffa,
+  whole_loffa_love,
   You_really_got_me,
 }
 
@@ -84,19 +86,19 @@ export const workType = [
 export const Testimonials = [
   {
     text: 'This is a template Figma file, turned into code using Anima.Learn more at AnimaApp.com',
-    image: gema_nolen,
+    image: gemma_nolen1,
     name: ' Gemi Nolen',
     company: 'Google',
   },
   {
     text: 'This is a template Figma file, turned into code using Anima.Learn more at AnimaApp.com',
-    image: gema_nolen2,
+    image: gemma_nolen2,
     name: ' Gemi Nolen',
     company: 'Google',
   },
   {
     text: 'This is a template Figma file, turned into code using Anima.Learn more at AnimaApp.com',
-    image: gema_nolen3,
+    image: gemma_nolen3,
     name: ' Gemi Nolen',
     company: 'Google',
   },
@@ -120,7 +122,7 @@ export const LatestWork = [
     person: 'Tom Petty',
   },
   {
-    image: whole_loffa,
+    image: whole_loffa_love,
     person: 'Led Zeppelin',
   },
   {
