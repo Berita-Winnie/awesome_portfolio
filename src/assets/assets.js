@@ -64,20 +64,29 @@ export const workType = [
   {
     image: product_design,
     title: 'Product design',
-    description:
-      'This template is a figma file .turned into code using Anima.Learn more at AnimaApp.com',
+    description: [
+      'This template is a figma file.',
+      'turned into code using Anima.',
+      'Learn more at AnimaApp.com',
+    ],
   },
   {
     image: art_direction,
     title: 'Art direction',
-    description:
-      'This template is a figma file .turned into code using Anima.Learn more at AnimaApp.com',
+    description: [
+      'This template is a figma file.',
+      'turned into code using Anima.',
+      'Learn more at AnimaApp.com',
+    ],
   },
   {
     image: visual_design,
     title: 'Visual design',
-    description:
-      'This template is a figma file .turned into code using Anima.Learn more at AnimaApp.com',
+    description: [
+      'This template is a figma file.',
+      'turned into code using Anima.',
+      'Learn more at AnimaApp.com',
+    ],
   },
 ]
 

@@ -1,10 +1,12 @@
 import React from 'react'
 import Header from './components/Header'
+import Design from './components/Design'
 
 const App = () => {
   return (
-    <div>
+    <div className="w-full overflow-hidden">
       <Header />
+      <Design />
     </div>
   )
 }
