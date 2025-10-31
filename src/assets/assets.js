@@ -27,7 +27,7 @@ import visual_design from './visual_design.png'
 import whole_loffa_love from './whole_loffa_love.png'
 import You_really_got_me from './You_really_got_me.png'
 import cancel_icon from './cancel_icon.png'
-
+import rate_stars from './rate_stars.png'
 export const assets = {
   American_girl,
   Apple,
@@ -90,22 +90,25 @@ export const workType = [
   },
 ]
 
-export const Testimonials = [
+export const testimonials = [
   {
     text: 'This is a template Figma file, turned into code using Anima.Learn more at AnimaApp.com',
     image: gemma_nolen1,
+    stars: rate_stars,
     name: ' Gemi Nolen',
     company: 'Google',
   },
   {
     text: 'This is a template Figma file, turned into code using Anima.Learn more at AnimaApp.com',
     image: gemma_nolen2,
+    stars: rate_stars,
     name: ' Gemi Nolen',
     company: 'Google',
   },
   {
     text: 'This is a template Figma file, turned into code using Anima.Learn more at AnimaApp.com',
     image: gemma_nolen3,
+    stars: rate_stars,
     name: ' Gemi Nolen',
     company: 'Google',
   },

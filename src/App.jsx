@@ -1,12 +1,14 @@
 import React from 'react'
 import Header from './components/Header'
-import Design from './components/Design'
+
+import Testimonials from './components/Testimonials'
 
 const App = () => {
   return (
     <div className="w-full overflow-hidden">
       <Header />
-      <Design />
+
+      <Testimonials />
     </div>
   )
 }
