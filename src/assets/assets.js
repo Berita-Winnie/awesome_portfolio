@@ -60,8 +60,6 @@ export const assets = {
   You_really_got_me,
 }
 
-export const companyLogos = [Behance, google, Apple, Dribble, Awwwards]
-
 export const workType = [
   {
     image: product_design,
