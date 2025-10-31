@@ -5,13 +5,13 @@ const Testimonials = () => {
   return (
     <>
       <Design />
-      <div className="container mx-auto flex flex-col gap-12 md:gap-8 w-full max-w-80% overflow-hidden  pt-80 md:pt-60  px-20 md:px-10 lg:px-30  items-center">
+      <div className="container mx-auto flex flex-col gap-12 md:gap-8 w-full max-w-80% overflow-hidden  pt-80 md:pt-60  px-12 md:px-10 lg:px-30  items-center">
         <h1 className="font-bold text-center text-base">Clients</h1>
-        <div className=" flex flex-col md:flex-row  items-center   gap-30 md:gap-8 lg:gap-18  ">
+        <div className=" flex flex-col md:flex-row  items-center   gap-14 md:gap-8 lg:gap-18  ">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-[#FFFCF5] border border-[#FFD285] p-2 md:p-6  md:max-w-1/3 "
+              className="bg-[#FFFCF5] border border-[#FFD285] p-4 md:max-w-1/3 "
             >
               <p className="text-start mb-2 lg:mb-8 text-sm lg:text-base font-semibold">
                 {testimonial.text}

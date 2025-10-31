@@ -114,29 +114,35 @@ export const testimonials = [
   },
 ]
 
-export const LatestWork = [
+export const work = [
   {
     image: free_bird,
+    title: 'Free Bird',
     person: 'Lynyrd Skynyrd',
   },
   {
     image: purple_haze,
+    title: 'Purple Haze',
     person: 'Jimi Hendrix',
   },
   {
     image: You_really_got_me,
+    title: 'You Really Got Me',
     person: 'The Kinks',
   },
   {
     image: American_girl,
+    title: 'American Girl',
     person: 'Tom Petty',
   },
   {
     image: whole_loffa_love,
+    title: 'Whole Lotta Love',
     person: 'Led Zeppelin',
   },
   {
     image: under_pressure,
+    title: 'Under Pressure',
     person: 'Queen',
   },
 ]
