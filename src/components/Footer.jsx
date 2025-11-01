@@ -21,6 +21,7 @@ const Footer = () => {
       toast.success('Form Submitted Successfully', {
         position: 'top-right',
         autoClose: 3000,
+        hideProgressBar: true,
       })
       event.target.reset()
     } else {
