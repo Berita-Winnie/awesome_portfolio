@@ -58,7 +58,7 @@ const Navbar = () => {
       <div
         className={`md:hidden ${
           showSideBar ? ' fixed w-full' : 'h-0 w-0'
-        }  right-0 top-0 bottom-0 overflow-hidden bg-white/60 transition-all`}
+        }  right-0 top-0 bottom-0 overflow-hidden bg-white/90 transition-all`}
       >
         <div className="flex justify-end p-6">
           <img

@@ -6,9 +6,9 @@ const Header = () => {
   return (
     <div>
       <Navbar />
-      <div className="   container w-full  mx-auto min-h-screen  overflow-hidden flex  items-center ">
-        <div className="flex flex-col md:flex-row items-center gap-20   sm:gap-2 md:gap-8 md:px-30 mx-auto pt-40 sm:pt-50 ">
-          <div className=" md:max-w-1/2 ">
+      <div className="   container w-full  max-w-80% mx-auto min-h-screen  overflow-hidden flex  items-center px-12 md:px-10 lg:px-30 ">
+        <div className="flex flex-col md:flex-row items-center gap-20   sm:gap-2 md:gap-8 mx-auto pt-40 sm:pt-50 ">
+          <div className=" w-full md:max-w-1/2 ">
             <h3
               className="font-semibold text-base sm:text-xl text-center md:text-start  md:text-xl
              mb-2"
@@ -36,7 +36,7 @@ const Header = () => {
         </div>
       </div>
       {/* ------------- Top Companies Secttion-----------*/}
-      <div className=" flex flex-col  px-20  pt-18 sm:pt-28 justify-center  md:px-30 mx-auto ">
+      <div className=" flex flex-col  pt-18 sm:pt-28 px-10 lg:px-20">
         <hr className="text-gray-500" />
         <div className=" grid grid-cols-2 sm:grid-cols-3 gap-8 lg:flex lg:gap-24 px-4 py-8 lg:px-10 lg:py-12">
           <img src={assets.Behance} alt="" />
