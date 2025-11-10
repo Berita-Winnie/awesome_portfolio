@@ -9,7 +9,13 @@ const Header = () => {
       <Navbar />
       <div className="   container w-full  max-w-80% mx-auto min-h-screen  overflow-hidden flex  items-center px-12 md:px-10 lg:px-30 ">
         <div className="flex flex-col md:flex-row items-center gap-20   sm:gap-2 md:gap-8 mx-auto pt-40 sm:pt-50 ">
-          <div className=" w-full md:max-w-1/2 ">
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            transition={{ duration: 1.5 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className=" w-full md:max-w-1/2 "
+          >
             <h3
               className="font-semibold text-base sm:text-xl text-center md:text-start  md:text-xl
              mb-2"
@@ -27,9 +33,13 @@ const Header = () => {
               into code using Anima. Learn more at <br />
               AnimaApp.com
             </p>
-          </div>
+          </motion.div>
 
-          <img
+          <motion.img
+            initial={{ opacity: 0, x: 100 }}
+            transition={{ duration: 1.5 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
             className=" w-60 sm:w-100   md:max-w-1/2"
             src={assets.Hero_image}
             alt=""
