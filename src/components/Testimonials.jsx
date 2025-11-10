@@ -5,7 +5,7 @@ const Testimonials = () => {
   return (
     <>
       <Design />
-      <div className="container mx-auto flex flex-col gap-12 md:gap-8 w-full max-w-80% overflow-hidden  pt-80 md:pt-60  px-12 md:px-10 lg:px-30  items-center">
+      <div className="container mx-auto flex flex-col gap-12 md:gap-8 w-full max-w-80% overflow-hidden  pt-80 md:pt-60  px-10 lg:px-30  items-center">
         <h1 className="font-bold text-center text-base">Clients</h1>
         <div className=" flex flex-col md:flex-row  items-center   gap-14 md:gap-8 lg:gap-18  ">
           {testimonials.map((testimonial, index) => (

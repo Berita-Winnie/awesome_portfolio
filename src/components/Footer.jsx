@@ -33,14 +33,14 @@ const Footer = () => {
   return (
     <div className="mt-24  px-12 md:px-10 lg:px-30   ">
       <div className="border-t border-t-black flex flex-col  md:flex-row  gap-20 justify-between py-12">
-        <div className=" flex flex-col gap-16 items-start  text-sm sm:text-base  w-full md:max-w-1/2 ">
+        <div className=" flex flex-col gap-16 items-center md:items-start  text-sm sm:text-base  w-full md:max-w-1/2 ">
           <p className="font-bold text-3xl  ">Let's work together</p>
           <p className="text-sm md:text-base max-w-80">
             This is a template Figma file, turned into code using Anima. Learn
             more at AnimaApp.com This is a template Figma file, turned into code
             using Anima. Learn more at AnimaApp.com
           </p>
-          <div className="flex flex-row gap-3 ">
+          <div className="flex flex-row gap-3  ">
             <img src={assets.discord} alt="" />
             <img src={assets.facebook} alt="" />
             <img src={assets.dribble_socials} alt="" />
@@ -50,7 +50,7 @@ const Footer = () => {
         </div>
         <form
           onSubmit={handleSubmit}
-          className="flex flex-col gap-6 text-sm  w-full md:max-w-1/2 outline-none  focus:outline-none resize-none"
+          className="flex flex-col justify-center gap-6 text-sm  w-full md:max-w-1/2 outline-none  focus:outline-none resize-none"
         >
           <input
             className="bg-[#F3F3F3] p-4 rounded max-w-80"

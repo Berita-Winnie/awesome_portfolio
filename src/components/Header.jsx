@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import Navbar from './Navbar'
 import { assets } from '../assets/assets'
+import { motion, useAnimationFrame } from 'motion/react'
 
 const Header = () => {
   return (
@@ -36,9 +37,15 @@ const Header = () => {
         </div>
       </div>
       {/* ------------- Top Companies Secttion-----------*/}
-      <div className=" flex flex-col  pt-18 sm:pt-28 px-10 lg:px-20">
+      <div className=" flex flex-col  pt-18 sm:pt-28 px-10 lg:px-20  max-w-80%">
         <hr className="text-gray-500" />
-        <div className=" grid grid-cols-2 sm:grid-cols-3 gap-8 lg:flex lg:gap-24 px-4 py-8 lg:px-10 lg:py-12">
+        <div className=" grid grid-cols-2 sm:grid-cols-3 gap-8 lg:flex lg:gap-24 animate-marquee whitespace-nowrap px-4 py-8 lg:px-10 lg:py-12">
+          <img src={assets.Behance} alt="" />
+          <img src={assets.google1} alt="" />
+          <img src={assets.Apple} alt="" />
+          <img src={assets.Dribble} alt="" />
+          <img src={assets.Awwwards} alt="" />
+          {/*-----------Repeat Logos for infinite loops------------ */}
           <img src={assets.Behance} alt="" />
           <img src={assets.google1} alt="" />
           <img src={assets.Apple} alt="" />
