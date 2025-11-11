@@ -32,7 +32,7 @@ const Footer = () => {
   }
 
   return (
-    <div className="pt-30 md:pt-60  px-12 md:px-10 lg:px-30   ">
+    <div className="pt-30 md:pt-60  px-12 md:px-10 lg:px-30   " id="Contact">
       <div className="border-t border-t-black flex flex-col  md:flex-row  gap-20 justify-between py-12">
         <motion.div
           initial={{ opacity: 0, x: -100 }}

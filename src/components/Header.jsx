@@ -1,13 +1,33 @@
-import React, { useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import Navbar from './Navbar'
 import { assets } from '../assets/assets'
 import { motion, useAnimationFrame } from 'motion/react'
 
 const Header = () => {
+  const scrollRefs = useRef([])
+
+  useEffect(() => {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
+    scrollRefs.current.forEach((scroller) => {
+      if (!scroller) return
+      const scrollerInner = scroller.querySelector('.scroller-inner')
+      const items = Array.from(scrollerInner.children)
+
+      items.forEach((item) => {
+        const clone = item.cloneNode(true)
+        clone.setAttribute('aria-hidden', 'true')
+        scrollerInner.appendChild(clone)
+      })
+    })
+  }, [])
+
   return (
     <div>
       <Navbar />
-      <div className="   container w-full  max-w-80% mx-auto min-h-screen  overflow-hidden flex  items-center px-12 md:px-10 lg:px-30 ">
+      <div
+        className="   container w-full  max-w-[80% ]mx-auto min-h-screen  overflow-hidden flex  items-center px-12 md:px-10 lg:px-30 "
+        id="Header"
+      >
         <div className="flex flex-col md:flex-row items-center gap-20   sm:gap-2 md:gap-8 mx-auto pt-40 sm:pt-50 ">
           <motion.div
             initial={{ opacity: 0, x: -100 }}
@@ -47,20 +67,27 @@ const Header = () => {
         </div>
       </div>
       {/* ------------- Top Companies Secttion-----------*/}
-      <div className=" flex flex-col  pt-18 sm:pt-28 px-10 lg:px-20  max-w-80%">
+      <div className=" flex flex-col  pt-18 sm:pt-28 px-10 lg:px-20 ">
         <hr className="text-gray-500" />
-        <div className=" grid grid-cols-2 sm:grid-cols-3 gap-8 lg:flex lg:gap-24 animate-marquee whitespace-nowrap px-4 py-8 lg:px-10 lg:py-12">
-          <img src={assets.Behance} alt="" />
-          <img src={assets.google1} alt="" />
-          <img src={assets.Apple} alt="" />
-          <img src={assets.Dribble} alt="" />
-          <img src={assets.Awwwards} alt="" />
+        <div
+          ref={(el) => (scrollRefs.current[0] = el)}
+          className="scroller overflow-hidden w-full "
+          data-speed="fast"
+          data-animated="true"
+        >
+          <div className=" scroller-inner flex gap-16 flex-nowrap  animate-scroll-fast  py-14">
+            <img src={assets.Behance} alt="" />
+
+            <img src={assets.google1} alt="" />
+
+            <img src={assets.Apple} alt="" />
+
+            <img src={assets.Dribble} alt="" />
+
+            <img src={assets.Awwwards} alt="" />
+          </div>
+
           {/*-----------Repeat Logos for infinite loops------------ */}
-          <img src={assets.Behance} alt="" />
-          <img src={assets.google1} alt="" />
-          <img src={assets.Apple} alt="" />
-          <img src={assets.Dribble} alt="" />
-          <img src={assets.Awwwards} alt="" />
         </div>
         <hr />
       </div>

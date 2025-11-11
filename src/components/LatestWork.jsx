@@ -4,7 +4,10 @@ import { motion } from 'motion/react'
 
 const LatestWork = () => {
   return (
-    <div className="container bg-[#ffffff] mx-auto flex flex-col gap-12 md:gap-8 w-full max-w-80% overflow-hidden  pt-30 md:pt-40  px-12 md:px-10 lg:px-30  items-center  mt-20 ">
+    <div
+      className="container bg-[#ffffff] mx-auto flex flex-col gap-12 md:gap-8 w-full max-w-80% overflow-hidden  pt-30 px-12 md:pt-40  md:px-10 lg:px-30  items-center  mt-20 "
+      id="LatestWork"
+    >
       <div>
         <h1 className="font-bold text-center mb-20 text-2xl">Latest Work</h1>
         <motion.div

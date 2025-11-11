@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { assets } from '../assets/assets'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   const [showSideBar, setShowSideBar] = useState(false)
@@ -16,22 +17,29 @@ const Navbar = () => {
 
   return (
     <div className="absolute top-0 left-0  w-full">
-      <div className=" container mx-auto flex flex-row justify-between  items-center  py-2 px-4  md:px-6 lg:px-12">
-        <img src={assets.Logo} alt="" className="w-24 sm:w-32 " />
+      <div className=" container mx-auto flex flex-row justify-between  items-center  py-2 px-4  md:px-6 lg:px-20">
+        <img
+          src={assets.Logo}
+          alt=""
+          className="w-24 sm:w-32 "
+          id="Header"
+          href="#Header"
+        />
 
-        <div className="hidden sm:flex flex-row gap-8 ">
-          <a
+        <div className="hidden sm:flex flex-row gap-12 ">
+          <Link
+            to="/"
             className="text-black hover:text-gray-400 cursor-pointer"
-            href="#Header"
+            href="#Home"
           >
             Home
-          </a>
-          <a
+          </Link>
+          <Link
             className="text-black hover:text-gray-400 cursor-pointer"
-            href="#About"
+            to="/about"
           >
             About
-          </a>
+          </Link>
           <a
             className="text-black hover:text-gray-400 cursor-pointer"
             href="#LatestWork"
@@ -69,18 +77,19 @@ const Navbar = () => {
           />
         </div>
         <ul className="flex flex-col gap-6 items-center pt-10  fontt-medium">
-          <a
+          <Link
+            to="/"
             className="text-black hover:text-gray-400 cursor-pointer"
             href="#Home"
           >
             Home
-          </a>
-          <a
+          </Link>
+          <Link
+            to="/about"
             className="text-black hover:text-gray-400 cursor-pointer"
-            href="#About"
           >
             About
-          </a>
+          </Link>
           <a
             className="text-black hover:text-gray-400 cursor-pointer"
             href="#LatestWork"
