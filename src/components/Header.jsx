@@ -23,7 +23,6 @@ const Header = () => {
 
   return (
     <div>
-      <Navbar />
       <div
         className="   container w-full  max-w-[80% ]mx-auto min-h-screen  overflow-hidden flex  items-center px-12 md:px-10 lg:px-30 "
         id="Header"

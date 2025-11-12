@@ -3,7 +3,6 @@ import Footer from './components/Footer'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import Home from './components/Home'
-
 import { Routes, Route } from 'react-router-dom'
 import About from './components/About'
 const App = () => {
@@ -15,7 +14,6 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
       </Routes>
-
       <Footer />
     </div>
   )

@@ -1,4 +1,6 @@
 import { assets } from '../assets/assets'
+
+import { motion } from 'motion/react'
 const AboutSec1 = () => {
   return (
     <div className="bg-[#F9E6F0] mt-24 py-24 px-10  md:p-40 overflow-hidden  w-full  ">
@@ -15,7 +17,12 @@ const AboutSec1 = () => {
           <p className="text-sm">Designer & Unicorn</p>
           <p className="text-sm ">Trainer</p>
         </div>
-        <div>
+        <motion.div
+          initial={{ opacity: 0, x: 100 }}
+          transition={{ duration: 1.5 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+        >
           <h1 className="font-semibold mb-2">Bio:</h1>
           <p>
             Father of 3 humans, 5 unicorns & 2 dogs, I design since I can
@@ -23,7 +30,7 @@ const AboutSec1 = () => {
             everyday’s lil’ details. And sometimes in leftover food I find in my
             beard.
           </p>
-        </div>
+        </motion.div>
       </div>
     </div>
   )

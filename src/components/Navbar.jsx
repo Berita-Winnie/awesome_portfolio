@@ -1,9 +1,18 @@
 import React, { useEffect, useState } from 'react'
 import { assets } from '../assets/assets'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 const Navbar = () => {
   const [showSideBar, setShowSideBar] = useState(false)
+  const location = useLocation()
+
+  const handleNavClick = (e, id) => {
+    if (location.pathname !== '/') {
+      e.preventDefault()
+      window.location.href = `/#${id}`
+    }
+  }
+
   useEffect(() => {
     if (showSideBar) {
       document.body.style.overflow = 'hidden'
@@ -30,7 +39,6 @@ const Navbar = () => {
           <Link
             to="/"
             className="text-black hover:text-gray-400 cursor-pointer"
-            href="#Home"
           >
             Home
           </Link>
@@ -41,6 +49,7 @@ const Navbar = () => {
             About
           </Link>
           <a
+            onClick={(e) => handleNavClick(e, 'LatestWork')}
             className="text-black hover:text-gray-400 cursor-pointer"
             href="#LatestWork"
           >

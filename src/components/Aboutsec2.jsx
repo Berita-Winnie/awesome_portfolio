@@ -1,8 +1,14 @@
 import React from 'react'
-
+import { motion } from 'motion/react'
 const Aboutsec2 = () => {
   return (
-    <div className="md:max-w-[60%] px-10  container overflow-hidden mx-auto mt-24 md:px-10">
+    <motion.div
+      initial={{ opacity: 0, y: 100 }}
+      transition={{ duration: 1.5 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      className="md:max-w-[60%] px-10  container overflow-hidden mx-auto mt-24 md:px-10"
+    >
       <div className="">
         <p className=" pt-10 text-start tracking-widest text-lg md:tracking-wider">
           When I was 5, I got adbucted by a unicorn family. When they returned
@@ -28,7 +34,7 @@ const Aboutsec2 = () => {
           refurbishing, Unicorn potty training and more.
         </p>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
