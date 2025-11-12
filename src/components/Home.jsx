@@ -1,4 +1,3 @@
-import React from 'react'
 import Header from './Header'
 import Testimonials from './Testimonials'
 import LatestWork from './LatestWork'

@@ -64,9 +64,9 @@ const Navbar = () => {
       </div>
       {/* ..........Navbar for small screens.......... */}
       <div
-        className={`md:hidden ${
-          showSideBar ? ' fixed w-full' : 'h-0 w-0'
-        }  right-0 top-0 bottom-0 overflow-hidden bg-white/90 transition-all`}
+        className={` fixed w-full right-0 top-0 bottom-0 overflow-hidden bg-white/90 transform transition-transform duration-700 ease-in-out ${
+          showSideBar ? ' translate-x-0' : 'translate-x-full'
+        } `}
       >
         <div className="flex justify-end p-6">
           <img

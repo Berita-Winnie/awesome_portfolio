@@ -64,22 +64,22 @@ const Footer = () => {
           className="flex flex-col justify-center gap-6 text-sm  w-full md:max-w-1/2 outline-none  focus:outline-none resize-none"
         >
           <input
-            className="bg-[#F3F3F3] p-4 rounded max-w-80 md:max-w-100"
+            className="bg-[#F3F3F3] p-4 rounded max-w-80 lg:max-w-[820px]"
             type="text"
             placeholder="Name"
             required
           />
           <input
-            className="bg-[#F3F3F3] p-4 rounded max-w-80 md:max-w-100"
+            className="bg-[#F3F3F3] p-4 rounded max-w-80 lg:max-w-[820px]"
             type="Email"
             placeholder="Email"
             required
           />
           <textarea
-            className="bg-[#F3F3F3] p-4 rounded max-w-80 md:max-w-100 h-40"
+            className="bg-[#F3F3F3] p-4 rounded max-w-80 lg:max-w-[820px] h-40"
             placeholder="Type Your message here"
           ></textarea>
-          <button className="bg-black text-white max-w-30   px-4 py-3">
+          <button className="bg-black text-white max-w-30  md:max-w-44  px-4 py-3">
             {result ? result : 'sendMessage'}
           </button>
         </motion.form>
