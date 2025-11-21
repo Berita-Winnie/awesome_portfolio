@@ -4,7 +4,7 @@ import { motion } from 'motion/react'
 
 const Design = () => {
   return (
-    <div className="container mx-auto w-full overflow-hidden  pt-30 md:pt-40 mt-30 md:px-10  items-center">
+    <div className="container mx-auto w-full overflow-hidden  pt-20 md:pt-20 mt-30 md:px-10  items-center">
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         transition={{ duration: 1.5 }}

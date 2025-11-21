@@ -7,7 +7,7 @@ import { Routes, Route } from 'react-router-dom'
 import About from './components/About'
 const App = () => {
   return (
-    <div className="w-full overflow-hidden">
+    <div className="w-full ">
       <ToastContainer />
       <Navbar />
       <Routes>

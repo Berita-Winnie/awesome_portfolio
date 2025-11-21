@@ -8,17 +8,3 @@
 html {
   scroll-behavior: smooth;
 }
-
-@keyframes scroll {
-  to {
-    transform: translateX(calc(-40% - 4rem));
-  }
-}
-
-.scroller[data-animated='true'] .scroller-inner {
-  animation: scroll 20s linear infinite;
-}
-
-.animate-scroll-slow-reverse {
-  animation: scroll 60s linear infinite reverse;
-}
